@@ -4,19 +4,25 @@ import CardList from "./CardList";
 import { robots } from "./robots.js";
 import './App.css'
 
-// const state={
-//     'robots':robots,
-//     'searchField':''
-// }
 
 class App extends Component{
     constructor(){
         super()
         this.state={
-            robots:robots,
+            robots:[],
             searchField:''
            
         }
+        // console.log("cons")
+    }
+    componentDidMount(){
+        // this.setState({robots:robots})
+        // console.log("cdm")
+        fetch('https://jsonplaceholder.typicode.com/users')
+       .then(res=> res.json())
+       .then(users=> this.setState({robots:users}))
+        // console.log(this.robots+"rb")
+
     }
     
     onsearchChange=(event)=>{
@@ -25,8 +31,10 @@ class App extends Component{
 
     render(){
         const filteredRobo=this.state.robots.filter(robots =>{
-            return robots.Name.toLowerCase().includes(this.state.searchField.toLowerCase());
+            return robots.name.toLowerCase().includes(this.state.searchField.toLowerCase());
         })
+        // console.log("render")
+        // console.log(this.state.robots);
         return (
             <div className="tc">
                 <h1 className="f2"> ROBOT FRIENDS</h1>
