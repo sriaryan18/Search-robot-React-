@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sriaryan18/Search-robot-React-/static/css/main.84ec84e1.css",
+    "main.js": "/sriaryan18/Search-robot-React-/static/js/main.f9f824df.js",
+    "static/js/787.e8f3daa8.chunk.js": "/sriaryan18/Search-robot-React-/static/js/787.e8f3daa8.chunk.js",
+    "static/media/SEGA.woff": "/sriaryan18/Search-robot-React-/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
+    "index.html": "/sriaryan18/Search-robot-React-/index.html",
+    "main.84ec84e1.css.map": "/sriaryan18/Search-robot-React-/static/css/main.84ec84e1.css.map",
+    "main.f9f824df.js.map": "/sriaryan18/Search-robot-React-/static/js/main.f9f824df.js.map",
+    "787.e8f3daa8.chunk.js.map": "/sriaryan18/Search-robot-React-/static/js/787.e8f3daa8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84ec84e1.css",
+    "static/js/main.f9f824df.js"
+  ]
+}
